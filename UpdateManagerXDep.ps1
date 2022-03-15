@@ -1,0 +1,1 @@
+﻿get-aduser -filter "department -eq 'Customer Service'" | Set-ADuser -Manager brenesrm -passthru | get-aduser -Properties Title,Manager | Select Name,Title,Manager

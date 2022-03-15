@@ -1,0 +1,1 @@
+Get-ADGroupMember "Usuarios RightFax" -Recursive | Get-ADUser -Properties * | Select-Object cn, Name, facsimileTelephoneNumber | Export-Csv E:\Reports\FaxBCCRv2.csv

@@ -1,0 +1,1 @@
+Get-ADUser -filter * -properties SamAccountName | where {($_.givenName -match "Pedro") -and ($_.name -contains "Corre Calle Pedro")}
